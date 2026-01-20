@@ -1,0 +1,7 @@
+{
+  "name": "Life Instruction Manual - AI Persona Analyst",
+  "description": "A high-tech futuristic dashboard that analyzes your photo to generate a comprehensive 'Life Instruction Manual' with personality stats, core traits, and maintenance tips using Gemini AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -20,7 +20,7 @@
     .font-orbitron {
       font-family: 'Orbitron', sans-serif;
     }
-    /* Futuristic scanning animation - Adjusted to 2.2s for better visual balance */
+    /* Futuristic scanning animation */
     @keyframes scan {
       0% { top: 0%; }
       100% { top: 100%; }
@@ -28,12 +28,22 @@
     .scan-line {
       animation: scan 2.2s linear infinite;
     }
+    /* Digital HUD Overlay Texture */
+    .hud-texture::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 100%),
+                        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%),
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+      background-size: 100% 100%, 100% 4px, 3px 100%;
+      pointer-events: none;
+      z-index: 50;
+      opacity: 0.4;
+    }
     /* Neon glow effects */
     .glow-cyan {
       box-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
-    }
-    .glow-text-cyan {
-      text-shadow: 0 0 8px rgba(34, 211, 238, 0.8);
     }
     .glass-panel {
       background: rgba(15, 23, 42, 0.8);
